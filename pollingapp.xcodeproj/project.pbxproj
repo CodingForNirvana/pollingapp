@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59701EE71A17F642004306BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701EE61A17F642004306BB /* AppDelegate.swift */; };
+		59701EEA1A17F642004306BB /* pollingapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59701EE81A17F642004306BB /* pollingapp.xcdatamodeld */; };
+		59701EEC1A17F642004306BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701EEB1A17F642004306BB /* ViewController.swift */; };
+		59701EEF1A17F642004306BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59701EED1A17F642004306BB /* Main.storyboard */; };
+		59701EF11A17F642004306BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59701EF01A17F642004306BB /* Images.xcassets */; };
+		59701EF41A17F642004306BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59701EF21A17F642004306BB /* LaunchScreen.xib */; };
+		59701F001A17F642004306BB /* pollingappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701EFF1A17F642004306BB /* pollingappTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59701EFA1A17F642004306BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59701ED91A17F642004306BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59701EE01A17F642004306BB;
+			remoteInfo = pollingapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59701EE11A17F642004306BB /* pollingapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pollingapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59701EE51A17F642004306BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59701EE61A17F642004306BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59701EE91A17F642004306BB /* pollingapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pollingapp.xcdatamodel; sourceTree = "<group>"; };
+		59701EEB1A17F642004306BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59701EEE1A17F642004306BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59701EF01A17F642004306BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		59701EF31A17F642004306BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		59701EF91A17F642004306BB /* pollingappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pollingappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59701EFE1A17F642004306BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59701EFF1A17F642004306BB /* pollingappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pollingappTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59701EDE1A17F642004306BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59701EF61A17F642004306BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59701ED81A17F642004306BB = {
+			isa = PBXGroup;
+			children = (
+				59701EE31A17F642004306BB /* pollingapp */,
+				59701EFC1A17F642004306BB /* pollingappTests */,
+				59701EE21A17F642004306BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59701EE21A17F642004306BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59701EE11A17F642004306BB /* pollingapp.app */,
+				59701EF91A17F642004306BB /* pollingappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59701EE31A17F642004306BB /* pollingapp */ = {
+			isa = PBXGroup;
+			children = (
+				59701EE61A17F642004306BB /* AppDelegate.swift */,
+				59701EEB1A17F642004306BB /* ViewController.swift */,
+				59701EED1A17F642004306BB /* Main.storyboard */,
+				59701EF01A17F642004306BB /* Images.xcassets */,
+				59701EF21A17F642004306BB /* LaunchScreen.xib */,
+				59701EE81A17F642004306BB /* pollingapp.xcdatamodeld */,
+				59701EE41A17F642004306BB /* Supporting Files */,
+			);
+			path = pollingapp;
+			sourceTree = "<group>";
+		};
+		59701EE41A17F642004306BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59701EE51A17F642004306BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59701EFC1A17F642004306BB /* pollingappTests */ = {
+			isa = PBXGroup;
+			children = (
+				59701EFF1A17F642004306BB /* pollingappTests.swift */,
+				59701EFD1A17F642004306BB /* Supporting Files */,
+			);
+			path = pollingappTests;
+			sourceTree = "<group>";
+		};
+		59701EFD1A17F642004306BB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59701EFE1A17F642004306BB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59701EE01A17F642004306BB /* pollingapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59701F031A17F642004306BB /* Build configuration list for PBXNativeTarget "pollingapp" */;
+			buildPhases = (
+				59701EDD1A17F642004306BB /* Sources */,
+				59701EDE1A17F642004306BB /* Frameworks */,
+				59701EDF1A17F642004306BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pollingapp;
+			productName = pollingapp;
+			productReference = 59701EE11A17F642004306BB /* pollingapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59701EF81A17F642004306BB /* pollingappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59701F061A17F642004306BB /* Build configuration list for PBXNativeTarget "pollingappTests" */;
+			buildPhases = (
+				59701EF51A17F642004306BB /* Sources */,
+				59701EF61A17F642004306BB /* Frameworks */,
+				59701EF71A17F642004306BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59701EFB1A17F642004306BB /* PBXTargetDependency */,
+			);
+			name = pollingappTests;
+			productName = pollingappTests;
+			productReference = 59701EF91A17F642004306BB /* pollingappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59701ED91A17F642004306BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = MadBullTechnologies;
+				TargetAttributes = {
+					59701EE01A17F642004306BB = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					59701EF81A17F642004306BB = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 59701EE01A17F642004306BB;
+					};
+				};
+			};
+			buildConfigurationList = 59701EDC1A17F642004306BB /* Build configuration list for PBXProject "pollingapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59701ED81A17F642004306BB;
+			productRefGroup = 59701EE21A17F642004306BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59701EE01A17F642004306BB /* pollingapp */,
+				59701EF81A17F642004306BB /* pollingappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59701EDF1A17F642004306BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59701EEF1A17F642004306BB /* Main.storyboard in Resources */,
+				59701EF41A17F642004306BB /* LaunchScreen.xib in Resources */,
+				59701EF11A17F642004306BB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59701EF71A17F642004306BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59701EDD1A17F642004306BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59701EEC1A17F642004306BB /* ViewController.swift in Sources */,
+				59701EE71A17F642004306BB /* AppDelegate.swift in Sources */,
+				59701EEA1A17F642004306BB /* pollingapp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59701EF51A17F642004306BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59701F001A17F642004306BB /* pollingappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59701EFB1A17F642004306BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59701EE01A17F642004306BB /* pollingapp */;
+			targetProxy = 59701EFA1A17F642004306BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59701EED1A17F642004306BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59701EEE1A17F642004306BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59701EF21A17F642004306BB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59701EF31A17F642004306BB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59701F011A17F642004306BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59701F021A17F642004306BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59701F041A17F642004306BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pollingapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		59701F051A17F642004306BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pollingapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		59701F071A17F642004306BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = pollingappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pollingapp.app/pollingapp";
+			};
+			name = Debug;
+		};
+		59701F081A17F642004306BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = pollingappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pollingapp.app/pollingapp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59701EDC1A17F642004306BB /* Build configuration list for PBXProject "pollingapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59701F011A17F642004306BB /* Debug */,
+				59701F021A17F642004306BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59701F031A17F642004306BB /* Build configuration list for PBXNativeTarget "pollingapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59701F041A17F642004306BB /* Debug */,
+				59701F051A17F642004306BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59701F061A17F642004306BB /* Build configuration list for PBXNativeTarget "pollingappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59701F071A17F642004306BB /* Debug */,
+				59701F081A17F642004306BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59701EE81A17F642004306BB /* pollingapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				59701EE91A17F642004306BB /* pollingapp.xcdatamodel */,
+			);
+			currentVersion = 59701EE91A17F642004306BB /* pollingapp.xcdatamodel */;
+			path = pollingapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 59701ED91A17F642004306BB /* Project object */;
+}
