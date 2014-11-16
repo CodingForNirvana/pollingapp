@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QQn-bM-7HX">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="66" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RRL-Dw-CGC">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="RRL-Dw-CGC">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
@@ -30,11 +30,53 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m0M-W1-DWM" id="3IA-Wg-QUC">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahB-CL-QyR">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="61" y="22" width="228" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ahB-CL-QyR" firstAttribute="leading" secondItem="3IA-Wg-QUC" secondAttribute="leadingMargin" constant="53" id="PDL-fi-r9i"/>
+                                                <constraint firstItem="ahB-CL-QyR" firstAttribute="top" secondItem="3IA-Wg-QUC" secondAttribute="topMargin" constant="14" id="cdS-s5-Ttb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ahB-CL-QyR" secondAttribute="trailing" constant="103" id="rKn-Vi-FJ5"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ahB-CL-QyR" secondAttribute="bottom" constant="15" id="yAv-yM-kVP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="ahB-CL-QyR"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="PDL-fi-r9i"/>
+                                                    <exclude reference="cdS-s5-Ttb"/>
+                                                    <exclude reference="rKn-Vi-FJ5"/>
+                                                    <exclude reference="yAv-yM-kVP"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="ahB-CL-QyR"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="PDL-fi-r9i"/>
+                                                    <include reference="cdS-s5-Ttb"/>
+                                                    <include reference="rKn-Vi-FJ5"/>
+                                                    <include reference="yAv-yM-kVP"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellTitleLabel" destination="ahB-CL-QyR" id="mJt-Oi-XVT"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="806"/>
+                                    <rect key="frame" x="0.0" y="28" width="400" height="769"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="rk8-WR-hKZ" id="TU2-Ds-Ikp"/>
@@ -50,7 +92,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L85-FZ-6y3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1330.5" y="-277.5"/>
+            <point key="canvasLocation" x="-1330.5" y="-246.75"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -119,7 +161,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="6Qm-AJ-mqg" customClass="PollsCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="6Qm-AJ-mqg" customClass="PollsCollectionViewCell" customModule="pollingapp">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -211,6 +253,9 @@
                                                 <include reference="hzW-e4-z5s"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <outlet property="optionImageA" destination="F53-7V-eaC" id="2cm-Ge-hN6"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -256,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahh-Qr-AJ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1237.5" y="475.5"/>
+            <point key="canvasLocation" x="-1232" y="601"/>
         </scene>
     </scenes>
     <resources>

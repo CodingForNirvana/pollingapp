@@ -28,7 +28,7 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.itemSize = CGSize(width: 90, height: 90)
 
-   //     collectionView!.registerClass(PollsCollectionViewCell.self, forCellWithReuseIdentifier: "CollectionViewCell")
+      //  collectionView!.registerClass(PollsCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: "CollectionViewCell")
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,7 +47,7 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as PollsCollectionViewCell
         cell.backgroundColor = UIColor.blackColor()
         return cell
     }

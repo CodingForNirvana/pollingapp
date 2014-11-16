@@ -26,7 +26,7 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.tableView?.registerClass(MainMenuCellView.self, forCellReuseIdentifier: "MainMenuCellView")
+       // self.tableView?.registerClass(MainMenuCellView.self, forCellReuseIdentifier: "MainMenuCellView")
         
         self.tableView?.separatorColor =  UIColor.clearColor();
         
@@ -43,8 +43,10 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:MainMenuCellView = self.tableView?.dequeueReusableCellWithIdentifier("MainMenuCellView")! as MainMenuCellView
-        cell.textLabel.text = self.tableViewCellItems[indexPath.row]
+        //cell.textLabel.text = self.tableViewCellItems[indexPath.row]
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width)
+        
+        cell.cellTitleLabel.text = self.tableViewCellItems[indexPath.row]
         return cell
     }
     

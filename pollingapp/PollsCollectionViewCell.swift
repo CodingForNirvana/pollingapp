@@ -10,6 +10,9 @@ import UIKit
 
 class PollsCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var optionImageA: UIImageView!
+
+    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -18,5 +21,9 @@ class PollsCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib();
     }
 }
