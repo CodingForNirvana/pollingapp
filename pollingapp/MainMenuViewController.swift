@@ -51,6 +51,29 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    
+        
+        switch indexPath.row {
+            case 0:
+                var storyboard = UIStoryboard(name: "CreatePollStoryboard", bundle: nil)
+                var createAPollViewController = storyboard.instantiateViewControllerWithIdentifier("CreateAPollViewControllerId") as CreateAPollViewController;
+                self.mm_drawerController.setCenterViewController(createAPollViewController as UIViewController, withCloseAnimation: true, completion: nil) ;
+                
+            break
+        case 1:
+            
+            var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        
+            var pollsViewController:UINavigationController = mainStoryboard.instantiateViewControllerWithIdentifier("PollsNavigationControllerId") as UINavigationController
+            self.mm_drawerController.setCenterViewController(pollsViewController as UINavigationController, withCloseAnimation: true, completion: nil) ;
+
+            break;
+        case 2:
+            
+            break;
+        default:
+            break;
+        }
         
     }
     
