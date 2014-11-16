@@ -24,6 +24,8 @@
 		59701F2F1A186B1B004306BB /* PollsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701F2E1A186B1B004306BB /* PollsViewController.swift */; };
 		59701F321A1870D9004306BB /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59701F311A1870D9004306BB /* UIViewController+MMDrawerController.m */; };
 		59701F351A187658004306BB /* MainMenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701F341A187658004306BB /* MainMenuCellView.swift */; };
+		59701F371A188B7C004306BB /* testimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 59701F361A188B7C004306BB /* testimage.png */; };
+		59701F3A1A188DB7004306BB /* PollsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701F391A188DB7004306BB /* PollsCollectionViewCell.swift */; };
 		7AF1D1BFF9A909599D964451 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CD8C8A70F95A4DED2B5A3A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,8 @@
 		59701F301A1870D9004306BB /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
 		59701F311A1870D9004306BB /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		59701F341A187658004306BB /* MainMenuCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuCellView.swift; sourceTree = "<group>"; };
+		59701F361A188B7C004306BB /* testimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testimage.png; sourceTree = "<group>"; };
+		59701F391A188DB7004306BB /* PollsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC53524325BFA147793CC3A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DD99015146C44C1A07828B2B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +130,7 @@
 				59701F221A18531A004306BB /* ObjectiveC */,
 				59701EED1A17F642004306BB /* Main.storyboard */,
 				59701EF01A17F642004306BB /* Images.xcassets */,
+				59701F361A188B7C004306BB /* testimage.png */,
 				59701EF21A17F642004306BB /* LaunchScreen.xib */,
 				59701EE41A17F642004306BB /* Supporting Files */,
 				5955388F1A1834780022E7F3 /* pollingapp-Bridging-Header.h */,
@@ -181,11 +186,11 @@
 		59701F231A18532D004306BB /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				59701F381A188D9E004306BB /* PollsViewController */,
 				59701F331A187637004306BB /* MainMenuViewController */,
 				59701F091A181DB4004306BB /* CoreDataModel */,
 				59701EE61A17F642004306BB /* AppDelegate.swift */,
 				59701EEB1A17F642004306BB /* LoginViewController.swift */,
-				59701F2E1A186B1B004306BB /* PollsViewController.swift */,
 			);
 			name = Swift;
 			sourceTree = "<group>";
@@ -197,6 +202,15 @@
 				59701F341A187658004306BB /* MainMenuCellView.swift */,
 			);
 			name = MainMenuViewController;
+			sourceTree = "<group>";
+		};
+		59701F381A188D9E004306BB /* PollsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				59701F2E1A186B1B004306BB /* PollsViewController.swift */,
+				59701F391A188DB7004306BB /* PollsCollectionViewCell.swift */,
+			);
+			name = PollsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59701EEF1A17F642004306BB /* Main.storyboard in Resources */,
+				59701F371A188B7C004306BB /* testimage.png in Resources */,
 				59701EF41A17F642004306BB /* LaunchScreen.xib in Resources */,
 				59701EF11A17F642004306BB /* Images.xcassets in Resources */,
 			);
@@ -341,6 +356,7 @@
 				59701F1D1A1824BB004306BB /* User.swift in Sources */,
 				59701F2D1A186AE5004306BB /* MainMenuViewController.swift in Sources */,
 				59701F2F1A186B1B004306BB /* PollsViewController.swift in Sources */,
+				59701F3A1A188DB7004306BB /* PollsCollectionViewCell.swift in Sources */,
 				59701F321A1870D9004306BB /* UIViewController+MMDrawerController.m in Sources */,
 				59701F201A1824BB004306BB /* Poll.swift in Sources */,
 				59701EEA1A17F642004306BB /* pollingapp.xcdatamodeld in Sources */,
