@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595538911A1834780022E7F3 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 595538901A1834780022E7F3 /* CustomObject.m */; };
 		59701EE71A17F642004306BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701EE61A17F642004306BB /* AppDelegate.swift */; };
 		59701EEA1A17F642004306BB /* pollingapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59701EE81A17F642004306BB /* pollingapp.xcdatamodeld */; };
 		59701EEC1A17F642004306BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59701EEB1A17F642004306BB /* ViewController.swift */; };
@@ -35,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		51CD8C8A70F95A4DED2B5A3A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5955388F1A1834780022E7F3 /* pollingapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pollingapp-Bridging-Header.h"; sourceTree = "<group>"; };
+		595538901A1834780022E7F3 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 		59701EE11A17F642004306BB /* pollingapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pollingapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59701EE51A17F642004306BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59701EE61A17F642004306BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +122,8 @@
 				59701EF01A17F642004306BB /* Images.xcassets */,
 				59701EF21A17F642004306BB /* LaunchScreen.xib */,
 				59701EE41A17F642004306BB /* Supporting Files */,
+				595538901A1834780022E7F3 /* CustomObject.m */,
+				5955388F1A1834780022E7F3 /* pollingapp-Bridging-Header.h */,
 			);
 			path = pollingapp;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				59701EE71A17F642004306BB /* AppDelegate.swift in Sources */,
 				59701F1D1A1824BB004306BB /* User.swift in Sources */,
 				59701F201A1824BB004306BB /* Poll.swift in Sources */,
+				595538911A1834780022E7F3 /* CustomObject.m in Sources */,
 				59701EEA1A17F642004306BB /* pollingapp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,9 +434,12 @@
 			baseConfigurationReference = DC53524325BFA147793CC3A7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = pollingapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pollingapp/pollingapp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -439,9 +448,11 @@
 			baseConfigurationReference = DD99015146C44C1A07828B2B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = pollingapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "pollingapp/pollingapp-Bridging-Header.h";
 			};
 			name = Release;
 		};
