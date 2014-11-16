@@ -9,7 +9,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-ECSlidingViewController.xcscheme</key>
+		<key>Pods-MMDrawerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,7 +24,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-pollingapp-ECSlidingViewController.xcscheme</key>
+		<key>Pods-pollingapp-MMDrawerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,7 +44,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-pollingappTests-ECSlidingViewController.xcscheme</key>
+		<key>Pods-pollingappTests-MMDrawerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -67,62 +67,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0B752291173E81E91F6B3A68</key>
+		<key>01846BD7534C056582B95B98</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>236B687580C7B51D4841D11A</key>
+		<key>0CB1349E30DD8EDC9B470B1D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>54E3A710FE8AF7132651841C</key>
+		<key>155500B4EC95164EADE36196</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>683E95FEB90D07E5FB4E9862</key>
+		<key>22E3442FED37BD08EC69DA67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7970688A89185A543B564373</key>
+		<key>2890FA4475745F59D653D503</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E226515A0BBE9647E906035</key>
+		<key>4D6EBE12C7BDDF59C1659712</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E43DC13D1FD0ACE3B70764</key>
+		<key>54A3CAD9245E6B47010D72C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB1820D6F45ED31A6E3633F4</key>
+		<key>59A0855C4BFE0114BCE72E99</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C825B2C3FA0B6627D4DD0755</key>
+		<key>5CC845F0CC8DDB1A99880D5D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB840FD54E2FA506E0B6A8E3</key>
+		<key>8D813E5C76B568E28FBF127C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2B1154DD3A8BF824494D2C6</key>
+		<key>E872B978C0487E67E4F5455E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E575FF954C8F66E61FC78CC9</key>
+		<key>F36462C15D61F8FEF95558F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

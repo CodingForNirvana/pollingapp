@@ -4,8 +4,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'Parse'
-pod 'ECSlidingViewController', '~> 2.0.2'
-
+pod 'MMDrawerController', '~> 0.5.7'
 
 target 'pollingapp' do
 

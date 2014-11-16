@@ -27,9 +27,9 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-## ECSlidingViewController
+## MMDrawerController
 
-Copyright (c) 2013 Mike Enriquez <mike@enriquez.me>
+Copyright (c) 2013 Mutual Mobile (http://mutualmobile.com/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

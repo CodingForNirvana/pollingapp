@@ -14,24 +14,8 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    lazy var slidingViewController: ECSlidingViewController? = {
-        
-       var storyBoard = UIStoryboard(name: "Main", bundle: nil);
-        var viewController: UIViewController = storyBoard.instantiateViewControllerWithIdentifier("ViewController") as UIViewController;
-       var navigationController = UINavigationController(rootViewController: viewController)
-        var slidingViewController = ECSlidingViewController(topViewController: navigationController);
-        
-        return slidingViewController
-    }()
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // Override point for customization after application launch.
-        window?.rootViewController = self.slidingViewController;
-        self.window?.makeKeyAndVisible();
-
         return true
     }
 
