@@ -1,13 +1,16 @@
 PODS:
   - Bolts (1.1.3)
+  - ECSlidingViewController (2.0.3)
   - Parse (1.5.0):
     - Bolts (~> 1.1.3)
 
 DEPENDENCIES:
+  - ECSlidingViewController (~> 2.0.2)
   - Parse
 
 SPEC CHECKSUMS:
   Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
+  ECSlidingViewController: e79fe856bfb1a99a39c995377a1943e50f7647eb
   Parse: 7de25b6f70f0b233e5d25835f62eabfa91e4f9d7
 
 COCOAPODS: 0.34.4
