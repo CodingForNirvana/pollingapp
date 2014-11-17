@@ -14,14 +14,17 @@ PODS:
     - MMDrawerController/Core
   - Parse (1.5.0):
     - Bolts (~> 1.1.3)
+  - UICKeyChainStore (1.0.5)
 
 DEPENDENCIES:
   - MMDrawerController (~> 0.5.7)
   - Parse
+  - UICKeyChainStore
 
 SPEC CHECKSUMS:
   Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
   MMDrawerController: c3ab7a318ddc7e2bcd133139c3161af08c6e1197
   Parse: 7de25b6f70f0b233e5d25835f62eabfa91e4f9d7
+  UICKeyChainStore: 4f9719600cc70025064e26f28f1210bcfc3b0c35
 
 COCOAPODS: 0.34.4

@@ -20,6 +20,9 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
+    let coredataManager = CoreDataManager()
+    var userPolls:NSArray = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -27,8 +30,10 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.itemSize = CGSize(width: 90, height: 90)
-
-      //  collectionView!.registerClass(PollsCollectionViewCell.classForCoder(), forCellWithReuseIdentifier: "CollectionViewCell")
+        
+        var userPollsArray = coredataManager.getCurrentUsersPolls()
+        self.userPolls = userPollsArray!
+       
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,7 +46,7 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+      return self.userPolls.count
     }
 
     
@@ -49,6 +54,8 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as PollsCollectionViewCell
         cell.backgroundColor = UIColor.blackColor()
+        var poll:Poll = self.userPolls[indexPath.row] as Poll
+        cell.question.text = poll.question
         return cell
     }
 

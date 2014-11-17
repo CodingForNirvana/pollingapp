@@ -26,7 +26,16 @@ class LoginViewController: UIViewController {
         
         
         self.presentViewController(mmDrawerViewController, animated: true) { () -> Void in
-            
+            //Saving constant username password in keychain. Please change it later on.
+            var keychainStore = UICKeyChainStore(service: kKeychainServiceName)
+            keychainStore.setString("amolTestUsername", forKey: kUsername)
+            keychainStore.setString("passwordShoudbehidden", forKey: kPassword)
+            keychainStore.setString("Amol", forKey: kFirstName)
+            keychainStore.setString("chaudhari", forKey: kLastName)
+            keychainStore.setString("chaudhari.amol.sopan@gmail.com", forKey: kEmailId)
+
+            keychainStore.synchronize(); // Write to keychain.
+
         }
         
     }

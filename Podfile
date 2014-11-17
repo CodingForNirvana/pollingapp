@@ -5,6 +5,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 pod 'Parse'
 pod 'MMDrawerController', '~> 0.5.7'
+pod 'UICKeyChainStore'
+
 
 target 'pollingapp' do
 

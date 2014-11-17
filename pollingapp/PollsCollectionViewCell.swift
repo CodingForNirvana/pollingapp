@@ -11,6 +11,7 @@ import UIKit
 class PollsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var optionImageA: UIImageView!
+    @IBOutlet weak var question: UITextView!
 
     
     required init(coder aDecoder: NSCoder) {

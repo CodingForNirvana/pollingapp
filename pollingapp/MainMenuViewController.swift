@@ -11,14 +11,14 @@ import UIKit
 
 class MainMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
-
+    
     required init(coder aDecoder: NSCoder) {
-     //   fatalError("init(coder:) has not been implemented")
+        //   fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
     
     var tableViewCellItems: [String] = ["Create a poll", "Public poles", "Settings"]
-
+    
     @IBOutlet
     var tableView: UITableView?
     
@@ -26,7 +26,7 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       // self.tableView?.registerClass(MainMenuCellView.self, forCellReuseIdentifier: "MainMenuCellView")
+        // self.tableView?.registerClass(MainMenuCellView.self, forCellReuseIdentifier: "MainMenuCellView")
         
         self.tableView?.separatorColor =  UIColor.clearColor();
         
@@ -37,7 +37,7 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         // Dispose of any resources that can be recreated.
     }
     
-     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.tableViewCellItems.count;
     }
     
@@ -51,22 +51,22 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    
+        
         
         switch indexPath.row {
-            case 0:
-                var storyboard = UIStoryboard(name: "CreatePollStoryboard", bundle: nil)
-                var createAPollViewController = storyboard.instantiateViewControllerWithIdentifier("CreateAPollViewControllerId") as CreateAPollViewController;
-                self.mm_drawerController.setCenterViewController(createAPollViewController as UIViewController, withCloseAnimation: true, completion: nil) ;
-                
+        case 0:
+            var storyboard = UIStoryboard(name: "CreatePollStoryboard", bundle: nil)
+            var createAPollViewController = storyboard.instantiateViewControllerWithIdentifier("SelectAPollViewControllerId") as UINavigationController;
+            self.mm_drawerController.setCenterViewController(createAPollViewController as UINavigationController, withCloseAnimation: true, completion: nil) ;
+            
             break
         case 1:
             
             var mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        
+            
             var pollsViewController:UINavigationController = mainStoryboard.instantiateViewControllerWithIdentifier("PollsNavigationControllerId") as UINavigationController
             self.mm_drawerController.setCenterViewController(pollsViewController as UINavigationController, withCloseAnimation: true, completion: nil) ;
-
+            
             break;
         case 2:
             

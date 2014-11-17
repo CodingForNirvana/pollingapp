@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
-        self.saveContext()
+        self.saveMainContext()
     }
 
     // MARK: - Core Data stack
@@ -81,29 +81,47 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return coordinator
     }()
 
-    lazy var managedObjectContext: NSManagedObjectContext? = {
+    
+    
+    
+    lazy var mainManagedObjectContext: NSManagedObjectContext? = {
+        var managedObjectContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.MainQueueConcurrencyType)
+        managedObjectContext.parentContext = self.privateWriterManagedObjectContext
+        return managedObjectContext
+    }()
+    
+    lazy var privateWriterManagedObjectContext: NSManagedObjectContext? = {
         // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) This property is optional since there are legitimate error conditions that could cause the creation of the context to fail.
         let coordinator = self.persistentStoreCoordinator
         if coordinator == nil {
             return nil
         }
-        var managedObjectContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.MainQueueConcurrencyType)
-        managedObjectContext.persistentStoreCoordinator = coordinator
-        return managedObjectContext
-    }()
+        var privateWriterManagedObjectContext = NSManagedObjectContext(concurrencyType: NSManagedObjectContextConcurrencyType.PrivateQueueConcurrencyType)
+        privateWriterManagedObjectContext.persistentStoreCoordinator = coordinator
+        return privateWriterManagedObjectContext
+        }()
+
 
     // MARK: - Core Data Saving support
 
-    func saveContext () {
-        if let moc = self.managedObjectContext {
+    func saveMainContext () {
+        self.mainManagedObjectContext!.performBlock {
+            self.saveContext(self.mainManagedObjectContext!)
+            self.privateWriterManagedObjectContext!.performBlock {
+                self.saveContext(self.privateWriterManagedObjectContext!)
+            }
+        }
+    }
+    
+    
+    func saveContext (managedObjectContext:NSManagedObjectContext) {
             var error: NSError? = nil
-            if moc.hasChanges && !moc.save(&error) {
+            if managedObjectContext.hasChanges && !managedObjectContext.save(&error) {
                 // Replace this implementation with code to handle the error appropriately.
                 // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 NSLog("Unresolved error \(error), \(error!.userInfo)")
                 abort()
             }
-        }
     }
 
 }

@@ -77,7 +77,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="473"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="rk8-WR-hKZ" id="TU2-Ds-Ikp"/>
@@ -214,6 +214,7 @@
                                             <constraint firstItem="F53-7V-eaC" firstAttribute="top" secondItem="6Qm-AJ-mqg" secondAttribute="topMargin" id="Fnn-Wu-I3f"/>
                                             <constraint firstItem="F53-7V-eaC" firstAttribute="leading" secondItem="6Qm-AJ-mqg" secondAttribute="leadingMargin" id="RDi-5I-mG0"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="F53-7V-eaC" secondAttribute="trailing" constant="154" id="XT6-LT-cli"/>
+                                            <constraint firstItem="qZV-10-6eS" firstAttribute="leading" secondItem="6Qm-AJ-mqg" secondAttribute="leadingMargin" constant="2" id="atJ-tx-Is1"/>
                                             <constraint firstItem="tXZ-9M-NGa" firstAttribute="trailing" secondItem="6Qm-AJ-mqg" secondAttribute="trailingMargin" id="gCi-k8-Arf"/>
                                             <constraint firstItem="Mo6-jC-JY2" firstAttribute="top" secondItem="tXZ-9M-NGa" secondAttribute="bottom" constant="16" id="hzW-e4-z5s"/>
                                             <constraint firstItem="qZV-10-6eS" firstAttribute="top" secondItem="Ujo-fH-kUA" secondAttribute="bottom" constant="10" id="l7G-5Y-eRp"/>
@@ -233,12 +234,13 @@
                                                 <exclude reference="gCi-k8-Arf"/>
                                                 <exclude reference="xFD-lf-uBN"/>
                                                 <exclude reference="zdv-ep-Wou"/>
-                                                <exclude reference="3kx-Ua-rkK"/>
                                                 <exclude reference="6VE-d0-IK1"/>
+                                                <exclude reference="atJ-tx-Is1"/>
                                                 <exclude reference="l7G-5Y-eRp"/>
                                                 <exclude reference="q2Z-QW-kVq"/>
                                                 <exclude reference="uFk-EW-CFO"/>
                                                 <exclude reference="wWF-R0-Scp"/>
+                                                <exclude reference="3kx-Ua-rkK"/>
                                                 <exclude reference="72W-WK-6o1"/>
                                                 <exclude reference="hzW-e4-z5s"/>
                                             </mask>
@@ -253,18 +255,20 @@
                                                 <include reference="gCi-k8-Arf"/>
                                                 <include reference="xFD-lf-uBN"/>
                                                 <include reference="zdv-ep-Wou"/>
-                                                <include reference="3kx-Ua-rkK"/>
                                                 <include reference="6VE-d0-IK1"/>
+                                                <include reference="atJ-tx-Is1"/>
                                                 <include reference="l7G-5Y-eRp"/>
                                                 <include reference="q2Z-QW-kVq"/>
                                                 <include reference="uFk-EW-CFO"/>
                                                 <include reference="wWF-R0-Scp"/>
+                                                <include reference="3kx-Ua-rkK"/>
                                                 <include reference="72W-WK-6o1"/>
                                                 <include reference="hzW-e4-z5s"/>
                                             </mask>
                                         </variation>
                                         <connections>
                                             <outlet property="optionImageA" destination="F53-7V-eaC" id="2cm-Ge-hN6"/>
+                                            <outlet property="question" destination="qZV-10-6eS" id="Wi5-SF-RMw"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
