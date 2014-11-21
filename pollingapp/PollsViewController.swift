@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import CoreData
 
 class PollsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -20,20 +21,23 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
         }
     }
     
+    var pollViewModel:PollsViewModel!;
     let coredataManager = CoreDataManager()
-    var userPolls:NSArray = []
+    
+    required init(coder aDecoder: NSCoder) {
+        //  fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.pollViewModel = PollsViewModel(usingPollsViewController: self)
+
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.itemSize = CGSize(width: 90, height: 90)
-        
-        var userPollsArray = coredataManager.getCurrentUsersPolls()
-        self.userPolls = userPollsArray!
-       
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,11 +46,19 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        if let sections = self.pollViewModel.fetchedResultsController?.sections {
+           return sections.count;
+        }
+        return 0;
     }
 
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      return self.userPolls.count
+        if let sectionsArray = self.pollViewModel.fetchedResultsController?.sections {
+            var sectionsInfo: NSFetchedResultsSectionInfo = sectionsArray[section] as NSFetchedResultsSectionInfo
+            return sectionsInfo.numberOfObjects;
+        }
+
+        return 0;
     }
 
     
@@ -54,7 +66,8 @@ class PollsViewController: UIViewController, UICollectionViewDataSource, UIColle
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as PollsCollectionViewCell
         cell.backgroundColor = UIColor.blackColor()
-        var poll:Poll = self.userPolls[indexPath.row] as Poll
+        
+        var poll:Poll = self.pollViewModel.fetchedResultsController?.objectAtIndexPath(indexPath) as Poll
         cell.question.text = poll.question
         return cell
     }

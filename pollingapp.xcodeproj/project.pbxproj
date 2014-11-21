@@ -30,6 +30,7 @@
 		5999F6C41A1961B600AA57C3 /* CreateAPollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999F6C31A1961B600AA57C3 /* CreateAPollViewModel.swift */; };
 		5999F6C71A1968DC00AA57C3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999F6C61A1968DC00AA57C3 /* CoreDataManager.swift */; };
 		5999F6C91A1989B500AA57C3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5999F6C81A1989B500AA57C3 /* Constants.swift */; };
+		59CDA13C1A1ED1EF00EEE901 /* PollsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59CDA13B1A1ED1EF00EEE901 /* PollsViewModel.swift */; };
 		7AF1D1BFF9A909599D964451 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CD8C8A70F95A4DED2B5A3A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		5999F6C31A1961B600AA57C3 /* CreateAPollViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAPollViewModel.swift; sourceTree = "<group>"; };
 		5999F6C61A1968DC00AA57C3 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		5999F6C81A1989B500AA57C3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		59CDA13B1A1ED1EF00EEE901 /* PollsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollsViewModel.swift; sourceTree = "<group>"; };
 		DC53524325BFA147793CC3A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DD99015146C44C1A07828B2B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +197,7 @@
 		59701F231A18532D004306BB /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				59CDA13E1A1ED20B00EEE901 /* ViewModels */,
 				5999F6BE1A19148D00AA57C3 /* CreatePollViewController */,
 				59701F381A188D9E004306BB /* PollsViewController */,
 				59701F331A187637004306BB /* MainMenuViewController */,
@@ -231,7 +234,6 @@
 				5999F6BA1A19143800AA57C3 /* CreateAPollViewController.swift */,
 				5999F6C11A1951CB00AA57C3 /* ReviewAPollViewController.swift */,
 				5999F6BC1A19148800AA57C3 /* CreatePollStoryboard.storyboard */,
-				5999F6C31A1961B600AA57C3 /* CreateAPollViewModel.swift */,
 			);
 			name = CreatePollViewController;
 			sourceTree = "<group>";
@@ -245,6 +247,15 @@
 				597EC0361A19983D0036AF16 /* User.swift */,
 			);
 			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		59CDA13E1A1ED20B00EEE901 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5999F6C31A1961B600AA57C3 /* CreateAPollViewModel.swift */,
+				59CDA13B1A1ED1EF00EEE901 /* PollsViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +410,7 @@
 				59701EE71A17F642004306BB /* AppDelegate.swift in Sources */,
 				5999F6C01A1951BD00AA57C3 /* SelectAPollViewController.swift in Sources */,
 				5999F6BB1A19143800AA57C3 /* CreateAPollViewController.swift in Sources */,
+				59CDA13C1A1ED1EF00EEE901 /* PollsViewModel.swift in Sources */,
 				59701F2D1A186AE5004306BB /* MainMenuViewController.swift in Sources */,
 				597EC0371A19983D0036AF16 /* User.swift in Sources */,
 				59701F2F1A186B1B004306BB /* PollsViewController.swift in Sources */,

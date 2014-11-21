@@ -77,7 +77,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="473"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="rk8-WR-hKZ" id="TU2-Ds-Ikp"/>
@@ -234,13 +234,13 @@
                                                 <exclude reference="gCi-k8-Arf"/>
                                                 <exclude reference="xFD-lf-uBN"/>
                                                 <exclude reference="zdv-ep-Wou"/>
+                                                <exclude reference="3kx-Ua-rkK"/>
                                                 <exclude reference="6VE-d0-IK1"/>
                                                 <exclude reference="atJ-tx-Is1"/>
                                                 <exclude reference="l7G-5Y-eRp"/>
                                                 <exclude reference="q2Z-QW-kVq"/>
                                                 <exclude reference="uFk-EW-CFO"/>
                                                 <exclude reference="wWF-R0-Scp"/>
-                                                <exclude reference="3kx-Ua-rkK"/>
                                                 <exclude reference="72W-WK-6o1"/>
                                                 <exclude reference="hzW-e4-z5s"/>
                                             </mask>
@@ -255,13 +255,13 @@
                                                 <include reference="gCi-k8-Arf"/>
                                                 <include reference="xFD-lf-uBN"/>
                                                 <include reference="zdv-ep-Wou"/>
+                                                <include reference="3kx-Ua-rkK"/>
                                                 <include reference="6VE-d0-IK1"/>
                                                 <include reference="atJ-tx-Is1"/>
                                                 <include reference="l7G-5Y-eRp"/>
                                                 <include reference="q2Z-QW-kVq"/>
                                                 <include reference="uFk-EW-CFO"/>
                                                 <include reference="wWF-R0-Scp"/>
-                                                <include reference="3kx-Ua-rkK"/>
                                                 <include reference="72W-WK-6o1"/>
                                                 <include reference="hzW-e4-z5s"/>
                                             </mask>
